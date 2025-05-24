@@ -1,28 +1,30 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
 
-const Header = () => {
-  return (
-    <StyledWrapper>
-      <h1>Encuentra la pareja</h1>
-    </StyledWrapper>
-  );
-};
-
-const StyledWrapper = styled.div`
-  background: #2a7b9b;
-  background: linear-gradient(
-    90deg,
-    rgba(42, 123, 155, 1) 0%,
-    rgba(176, 150, 0, 1) 100%
-  );
+const HeaderContainer = styled.header`
+  background: linear-gradient(90deg, rgba(42,123,155,1) 0%, rgba(176,150,0,1) 100%);
   height: 150px;
-  color: #fff;
+  color: #FFF;
   display: flex;
-  text-align: center;
   justify-content: center;
   align-items: center;
   width: 100%;
-`;
+`
 
-export default Header;
+const ContentWrapper = styled.div`
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+`
+
+export default function Header() {
+  return (
+    <HeaderContainer>
+      <ContentWrapper>
+        <h1>Encuentra la pareja</h1>
+      </ContentWrapper>
+    </HeaderContainer>
+  )
+}
