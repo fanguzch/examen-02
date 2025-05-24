@@ -7,7 +7,7 @@ const CardContainer = styled.div`
   background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
   border-radius: 20px;
   transition: all 0.3s;
-  margin: 10px;
+  margin: 0px;
   position: relative;
   ${(props) =>
     props.flipped &&

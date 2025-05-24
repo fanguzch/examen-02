@@ -8,23 +8,13 @@ const HeaderContainer = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-`
-
-const ContentWrapper = styled.div`
-  width: 90%;
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
+  width: 100%; /* Asegura que ocupe todo el ancho */
 `
 
 export default function Header() {
   return (
     <HeaderContainer>
-      <ContentWrapper>
-        <h1>Encuentra la pareja</h1>
-      </ContentWrapper>
+      <h1>Encuentra la pareja</h1>
     </HeaderContainer>
   )
 }
